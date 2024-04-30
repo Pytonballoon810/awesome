@@ -11,6 +11,7 @@ This is a list of awesome apps that I use on a daily basis.
 - [Nextcloud](https://github.com/nextcloud): A safe home for all your data.
 - [Vaultwarden](https://github.com/dani-garcia/vaultwarden): Unofficial [Bitwarden](https://github.com/bitwarden) compatible server written in Rust, formerly known as bitwarden_rs
 - [Saturn PCB Design Toolkit](https://saturnpcb.com/): A free PCB design toolkit for your electronics projects
+- [OpenSSL Wizard](https://github.com/deviousasti/openssl-wizard): A wizard/gui to help you with using the openssl cli
 
 # Awesome Websites
 This is a list of awesome websites that I use on a daily basis for various purposes (Graphic and PCB Design, CSS and HTML, etc.).
