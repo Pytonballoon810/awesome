@@ -33,3 +33,9 @@ This is a list of awesome websites that I use on a daily basis for various purpo
 This is a list of awesome CLI tools.  
 
 - [FFMPEG](https://ffmpeg.org/): A complete, cross-platform solution to record, convert and stream audio and video
+
+# Awesome Hardware
+This is a list of awesome hardware that I use on a daily basis or have or will probably build and/or use in the future.
+
+- [Smart Knob View](https://github.com/scottbez1/smartknob)
+- [Smart Knob Dev Kit](https://github.com/SeedLabs-it/smartknob-firmware)
