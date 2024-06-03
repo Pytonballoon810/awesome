@@ -39,3 +39,9 @@ This is a list of awesome hardware that I use on a daily basis or have or will p
 
 - [Smart Knob View](https://github.com/scottbez1/smartknob)
 - [Smart Knob Dev Kit](https://github.com/SeedLabs-it/smartknob-firmware)
+
+# Awesome Hardware Modding
+Thsi is a list of awesome hardware modding projects that I have done or will probably do in the future.
+
+- [Upgraded Nintendo Gameboy](https://www.youtube.com/watch?v=qDT7KZjdlpc)
+- [Local Google Nest Mini Gen 2](https://github.com/justLV/onju-voice)
