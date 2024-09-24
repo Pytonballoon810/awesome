@@ -45,3 +45,11 @@ Thsi is a list of awesome hardware modding projects that I have done or will pro
 
 - [Upgraded Nintendo Gameboy](https://www.youtube.com/watch?v=qDT7KZjdlpc)
 - [Local Google Nest Mini Gen 2](https://github.com/justLV/onju-voice)
+
+# Awesome GitHub Repos
+This is a list of awesome GitHub repos I have found to be useful.
+
+- [neolink](https://github.com/QuantumEntangledAndy/neolink): A tool to restream your Reolink cameras to a local NVR
+- [frigate](https://github.com/blakeblackshear/frigate): NVR with realtime local object detection for IP cameras
+- [home-assistant](https://github.com/home-assistant): Open source home automation that puts local control and privacy first
+- [Jellyfin](https://github.com/jellyfin/jellyfin): The Free Software Media System
