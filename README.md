@@ -28,6 +28,7 @@ This is a list of awesome websites that I use on a daily basis for various purpo
 - [Vis Send](https://send.vis.ee/): Simple, private file sharing. Fork from [mozilla/send](https://github.com/mozilla/send)
 - [JLCPCB](https://jlcpcb.com/): A cheap PCB manufacturer
 - [LCSC](https://www.lcsc.com/): A cheap electronic components supplier
+- [WEMOS D1 Mini Pinout helper](https://lastminuteengineers.com/wemos-d1-mini-pinout-reference/)
 
 # Awesome CLI Tools
 This is a list of awesome CLI tools.  
