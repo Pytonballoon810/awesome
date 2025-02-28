@@ -1,7 +1,18 @@
-# Awesome Apps
-This is a list of awesome apps that I use on a daily basis. 
+# Table of Contents
 
-- [KiCad ](https://github.com/KiCad): A Cross Platform and Open Source Electronics Design Automation Suite
+- [Awesome Apps](#awesome-apps)
+- [Awesome Websites](#awesome-websites)
+- [Awesome CLI Tools](#awesome-cli-tools)
+- [Awesome Hardware](#awesome-hardware)
+- [Awesome Hardware Modding](#awesome-hardware-modding)
+- [Awesome GitHub Repos](#awesome-github-repos)
+- [Awesome GHISTS](#awesome-ghists)
+
+## Awesome Apps
+
+This is a list of awesome apps that I use on a daily basis.
+
+- [KiCad](https://github.com/KiCad): A Cross Platform and Open Source Electronics Design Automation Suite
 - [SSHFS For Windows](https://github.com/winfsp/sshfs-win)
 - [scrcpy](https://github.com/Genymobile/scrcpy): Display and control your Android device
 - [mousejiggler](https://github.com/arkane-systems/mousejiggler): Mouse Jiggler is a very simple piece of software whose sole function is to "fake" mouse input to Windows, and jiggle the mouse pointer back and forth.
@@ -13,7 +24,8 @@ This is a list of awesome apps that I use on a daily basis.
 - [Saturn PCB Design Toolkit](https://saturnpcb.com/): A free PCB design toolkit for your electronics projects
 - [OpenSSL Wizard](https://github.com/deviousasti/openssl-wizard): A wizard/gui to help you with using the openssl cli
 
-# Awesome Websites
+## Awesome Websites
+
 This is a list of awesome websites that I use on a daily basis for various purposes (Graphic and PCB Design, CSS and HTML, etc.).
 
 - [EasyEDA](https://easyeda.com/): A free, zero-install, Web and Cloud-based EDA tool suite, integrating powerful schematic capture, mixed-mode circuit simulation and PCB layout
@@ -30,27 +42,35 @@ This is a list of awesome websites that I use on a daily basis for various purpo
 - [LCSC](https://www.lcsc.com/): A cheap electronic components supplier
 - [WEMOS D1 Mini Pinout helper](https://lastminuteengineers.com/wemos-d1-mini-pinout-reference/)
 
-# Awesome CLI Tools
+## Awesome CLI Tools
+
 This is a list of awesome CLI tools.  
 
 - [FFMPEG](https://ffmpeg.org/): A complete, cross-platform solution to record, convert and stream audio and video
 
-# Awesome Hardware
+## Awesome Hardware
+
 This is a list of awesome hardware that I use on a daily basis or have or will probably build and/or use in the future.
 
 - [Smart Knob View](https://github.com/scottbez1/smartknob)
 - [Smart Knob Dev Kit](https://github.com/SeedLabs-it/smartknob-firmware)
 
-# Awesome Hardware Modding
+## Awesome Hardware Modding
+
 Thsi is a list of awesome hardware modding projects that I have done or will probably do in the future.
 
 - [Upgraded Nintendo Gameboy](https://www.youtube.com/watch?v=qDT7KZjdlpc)
 - [Local Google Nest Mini Gen 2](https://github.com/justLV/onju-voice)
 
-# Awesome GitHub Repos
+## Awesome GitHub Repos
+
 This is a list of awesome GitHub repos I have found to be useful.
 
 - [neolink](https://github.com/QuantumEntangledAndy/neolink): A tool to restream your Reolink cameras to a local NVR
 - [frigate](https://github.com/blakeblackshear/frigate): NVR with realtime local object detection for IP cameras
 - [home-assistant](https://github.com/home-assistant): Open source home automation that puts local control and privacy first
 - [Jellyfin](https://github.com/jellyfin/jellyfin): The Free Software Media System
+
+## Awesome GHISTS
+
+- [Open Powershell Here](https://gist.github.com/davecan/f3045266aa9e3441211ab55f9db70c2b): Open a PowerShell window in the current directory from the context menu in Windows Explorer
