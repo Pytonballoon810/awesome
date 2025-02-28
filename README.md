@@ -6,7 +6,7 @@
 - [Awesome Hardware](#awesome-hardware)
 - [Awesome Hardware Modding](#awesome-hardware-modding)
 - [Awesome GitHub Repos](#awesome-github-repos)
-- [Awesome GHISTS](#awesome-ghists)
+- [Awesome GISTs](#awesome-gists)
 
 ## Awesome Apps
 
@@ -71,6 +71,6 @@ This is a list of awesome GitHub repos I have found to be useful.
 - [home-assistant](https://github.com/home-assistant): Open source home automation that puts local control and privacy first
 - [Jellyfin](https://github.com/jellyfin/jellyfin): The Free Software Media System
 
-## Awesome GHISTS
+## Awesome GISTs
 
 - [Open Powershell Here](https://gist.github.com/davecan/f3045266aa9e3441211ab55f9db70c2b): Open a PowerShell window in the current directory from the context menu in Windows Explorer
