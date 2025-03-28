@@ -70,6 +70,7 @@ This is a list of awesome GitHub repos I have found to be useful.
 - [frigate](https://github.com/blakeblackshear/frigate): NVR with realtime local object detection for IP cameras
 - [home-assistant](https://github.com/home-assistant): Open source home automation that puts local control and privacy first
 - [Jellyfin](https://github.com/jellyfin/jellyfin): The Free Software Media System
+- [STL Preview](https://github.com/unlimitedbacon/stl-thumb/releases/tag/v0.5.0): A Windows shell extension to preview STL files
 
 ## Awesome GISTs
 
