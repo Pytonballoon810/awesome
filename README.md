@@ -7,6 +7,8 @@
 - [Awesome Hardware Modding](#awesome-hardware-modding)
 - [Awesome GitHub Repos](#awesome-github-repos)
 - [Awesome GISTs](#awesome-gists)
+- [Awesome Windows Registry Entries](#awesome-windows-registry-entries)
+- [Awesome AutoHotkey Scripts](#awesome-autohotkey-scripts)
 
 ## Awesome Apps
 
@@ -76,3 +78,19 @@ This is a list of awesome GitHub repos I have found to be useful.
 ## Awesome GISTs
 
 - [Open Powershell Here](https://gist.github.com/davecan/f3045266aa9e3441211ab55f9db70c2b): Open a PowerShell window in the current directory from the context menu in Windows Explorer
+
+## Awesome Windows Registry Entries
+
+This is a list of awesome Windows registry entries that I have found to be useful.
+
+- [Add New .reg File Template](./add_new_reg_template_option.reg): Adds a new option to the context menu to create a new .reg file based on a template
+- [Add New .ps1 File Template](./add_new_ps1_template_option.reg): Adds a new option to the context menu to create a new PowerShell script file based on a template # TODO: This is currently broken, needs to be fixed
+- [Open PowerShell Here](./open_powershell_here.reg): Adds an option to the context menu to open a PowerShell window in the current directory like is possible with the Windows Terminal app
+- [Open WSL Here](./open_wsl_here.reg): Adds an option to the context menu to open a WSL terminal window in the current directory like is possible with the Windows Terminal app
+- [Copy as WSL Path](./copy_as_wsl_path.reg): Adds an option to the context menu to copy the path of a file or folder as a WSL path (e.g., `/mnt/c/Users/username/Documents/file.txt`)
+
+## Awesome AutoHotkey Scripts
+
+This is a list of awesome AutoHotkey scripts that I have found to be useful.
+
+- [PasteEscape](./PasteEscape.ahk): A script that allows you to paste text that is automatically escaped when pasted by pressing `Ctrl+Shift+V` (for example: `"c:\Users\username"` will be pasted as `\"c:\\Users\\username\"`)
