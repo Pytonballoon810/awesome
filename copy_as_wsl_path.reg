@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\CopyAsWSLPath]
+@="Copy as WSL Path"
+"Icon"="C:\\Windows\\System32\\wsl.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\CopyAsWSLPath\command]
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"$path='%1'; $drive=$path.Substring(0,1).ToLower(); $wslPath=$path -replace '^[A-Za-z]:', \\\"/mnt/$drive\\\" -replace '\\\\','/'; Set-Clipboard -Value $wslPath\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\CopyAsWSLPath]
+@="Copy as WSL Path"
+"Icon"="C:\\Windows\\System32\\wsl.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\CopyAsWSLPath\command]
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"$path='%1'; $drive=$path.Substring(0,1).ToLower(); $wslPath=$path -replace '^[A-Za-z]:', \\\"/mnt/$drive\\\" -replace '\\\\','/'; Set-Clipboard -Value $wslPath\""

@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Open WSL Here]
+@="Open WSL Here"
+"Icon"="C:\\Windows\\System32\\wsl.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Open WSL Here\command]
+@="C:\\Windows\\System32\\wsl.exe --cd \"%V\""
