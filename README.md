@@ -88,6 +88,9 @@ This is a list of awesome Windows registry entries that I have found to be usefu
 - [Open PowerShell Here](./open_powershell_here.reg): Adds an option to the context menu to open a PowerShell window in the current directory like is possible with the Windows Terminal app
 - [Open WSL Here](./open_wsl_here.reg): Adds an option to the context menu to open a WSL terminal window in the current directory like is possible with the Windows Terminal app
 - [Copy as WSL Path](./copy_as_wsl_path.reg): Adds an option to the context menu to copy the path of a file or folder as a WSL path (e.g., `/mnt/c/Users/username/Documents/file.txt`)
+- [Convert to with ImageMagick](./convert_to_with_ImageMagick.reg): Adds an option to the context menu to convert an image file to another format using ImageMagick
+- [Default preview reg files](./default_preview_reg_files.reg): Sets the default open action for .reg files to open in the registry preview mode, allowing you to view and edit the contents of the file before applying it to the registry
+- [Open physical folder](./open_physical_folder.reg): Adds an option to the context menu to open the physical folder of a library folder
 
 ## Awesome AutoHotkey Scripts
 
