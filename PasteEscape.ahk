@@ -1,3 +1,5 @@
+#Requires AutoHotkey v2.0
+
 ^+v:: {  ; Ctrl+Shift+V hotkey
     ClipSaved := ClipboardAll()  ; Save full clipboard content (all formats)
     ClipText := A_Clipboard      ; Get clipboard text using the built-in variable
