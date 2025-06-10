@@ -8,6 +8,7 @@ This document explains how to use the registry files to add custom templates for
 - [New File Templates](#new-file-templates)
 - [Additional Registry Enhancements](#additional-registry-enhancements)
 - [AutoHotkey Scripts](#autohotkey-scripts)
+- [Tampermonkey Userscripts](#tampermonkey-userscripts)
 - [Customization](#customization)
 - [Troubleshooting](#troubleshooting)
 - [Security Note](#security-note)
@@ -15,6 +16,8 @@ This document explains how to use the registry files to add custom templates for
 ## Overview
 
 The registry files in this repository allow you to add custom templates to the Windows "New" context menu. When you right-click in File Explorer and select "New", you'll see options to create files based on your templates.
+
+Additionally, this repository includes various AutoHotkey scripts for productivity enhancements, system customizations, and automation tasks. There are also Tampermonkey userscripts for browser-based automation and enhancements.
 
 ## New File Templates
 
@@ -142,6 +145,70 @@ The `open_physical_folder.reg` file adds a context menu option to open the physi
 
 These scripts provide productivity enhancements for various tasks. All scripts require [AutoHotkey v2.0](https://www.autohotkey.com/) to be installed.
 
+### Auto Turn On 3D Printer Smart Plug
+
+The `AutoTurnOn3DPrinterSmartPlug.ahk` script automatically monitors for 3D printing slicer applications and turns on a smart plug connected to your 3D printer when a slicer is opened.
+
+#### 3D Printer Smart Plug - Prerequisites
+
+1. Home Assistant instance running and accessible
+2. Smart plug configured in Home Assistant
+3. Long-lived access token generated in Home Assistant
+
+#### 3D Printer Smart Plug - Installation
+
+1. Download the `AutoTurnOn3DPrinterSmartPlug.ahk` script
+2. Create a `.env` file in the same directory as the script with your configuration:
+
+   ```bash
+   HomeAssistantURL=http://your-homeassistant-ip:8123
+   AuthToken=your_long_lived_access_token_here
+   SmartPlugEntityId=switch.3d_printer_plug
+   ```
+
+3. Double-click to run the script, or add it to your startup items for persistent use
+
+#### 3D Printer Smart Plug - Configuration
+
+1. The script monitors for these slicer applications by default:
+   - Orca Slicer (`orca-slicer.exe`)
+   - Bambu Studio (`bambu-studio.exe`)
+2. To add more slicer applications, edit the `SlicerProcesses` array in the script
+3. Update the `.env` file with your Home Assistant URL, access token, and smart plug entity ID
+
+#### 3D Printer Smart Plug - Usage
+
+1. The script runs in the background and checks for slicer applications every 5 seconds
+2. When a monitored slicer application is launched:
+   - The script detects the process
+   - Sends a command to Home Assistant to turn on the specified smart plug
+   - Shows a system notification confirming the action
+3. The smart plug remains on until manually turned off through Home Assistant or other automation
+
+### Auto Setup VS Code Workspace
+
+The `AutoSetupVSCodeWorkspace.ahk` script automatically copies template files from a designated folder to newly opened VS Code workspaces.
+
+#### Auto Setup VS Code Workspace - Installation
+
+1. Download the `AutoSetupVSCodeWorkspace.ahk` script
+2. Double-click to run it, or add it to your startup items for persistent use
+
+#### Auto Setup VS Code Workspace - Configuration
+
+1. The script uses `C:\Users\Philipp\Documents\GitHub\awesome\Templates` as the source for template files
+2. To change this location, edit the `templateDir` variable in the script
+
+#### Auto Setup VS Code Workspace - Usage
+
+1. The script runs in the background and monitors for new VS Code windows
+2. When you open VS Code with a workspace folder, the script:
+   - Detects the workspace path from the window title
+   - Checks if the workspace directory exists
+   - Copies any template files from your template directory to the workspace
+   - Shows a notification when files are copied
+3. The script creates a log file at `VSCodeSetupLog.txt` for troubleshooting
+
 ### Paste with Escaped Characters
 
 The `PasteEscape.ahk` script provides a way to paste clipboard text with special characters automatically escaped, which is useful for programming and scripting tasks.
@@ -209,6 +276,66 @@ The `OpenTextInVSCodeCopilot.ahk` script provides quick shortcuts to send select
   2. Press `Ctrl+Shift+G`
   3. VS Code will activate, create a new Copilot Chat, and submit your text
 
+### Disable Start Menu Windows Key
+
+The `DisableStartMenuWinKey.ahk` script disables the Windows key from opening the Start Menu while preserving common Windows key combinations.
+
+#### Disable Start Menu Windows Key - Installation
+
+1. Download the `DisableStartMenuWinKey.ahk` script
+2. Double-click to run it, or add it to your startup items for persistent use
+
+#### Disable Start Menu Windows Key - Usage
+
+1. The script runs in the background and intercepts Windows key presses
+2. Pressing the Windows key alone will not open the Start Menu
+3. Common key combinations still work:
+   - `Win+R`: Opens Run dialog
+   - `Win+E`: Opens File Explorer
+4. To restore normal Windows key behavior, exit the script or use the registry file alternative
+
+## Tampermonkey Userscripts
+
+These userscripts enhance browser functionality and provide automation for various web services. All scripts require the [Tampermonkey](https://www.tampermonkey.net/) browser extension to be installed.
+
+### Open Video Services in Edge and Clean Tab
+
+The "Open Video Services in Edge and Clean Tab" userscript automatically redirects video streaming services from Firefox to Microsoft Edge for better DRM support and performance.
+
+#### Video Services Redirect - Prerequisites
+
+1. Install Tampermonkey browser extension in Firefox
+2. Microsoft Edge browser installed on the system
+
+#### Video Services Redirect - Installation
+
+1. Open Tampermonkey dashboard in Firefox
+2. Click "Create a new script"
+3. Copy and paste the contents of `Open Video Services in Edge and Clean Tab.js`
+4. Save the script (Ctrl+S)
+5. Ensure the script is enabled in Tampermonkey
+
+#### Video Services Redirect - Configuration
+
+The script monitors these video services by default:
+
+- Netflix (`netflix.com`)
+- Amazon Prime Video (`primevideo.com`)
+- Disney Plus (`disneyplus.com`)
+- Hulu (`hulu.com`)
+- Amazon Video Germany (`amazon.de/gp/video`)
+
+To add more services, edit the `services` array in the script.
+
+#### Video Services Redirect - Usage
+
+1. The script runs automatically in the background
+2. When you navigate to a supported video service:
+   - The page is automatically redirected to Microsoft Edge
+   - The Firefox tab is cleaned up to show a "Redirected to Edge" message
+   - The original URL is preserved in the Edge redirect
+3. Links to video services on other websites will also redirect when clicked
+
 ## Customization
 
 ### Changing Template Locations
@@ -235,6 +362,9 @@ To add templates for other file types:
 - Check that you have proper permissions to modify the registry and access the template files
 - Check that any required software dependencies are installed correctly (like PowerToys or ImageMagick)
 - For template files, ensure they have appropriate content for their file type
+- For the 3D printer smart plug script, ensure Home Assistant is accessible and the access token has the necessary permissions
+- For AutoHotkey scripts, ensure AutoHotkey v2.0 is installed and scripts have proper permissions
+- For Tampermonkey scripts, verify the extension is enabled and scripts are active in the dashboard
 
 ## Security Note
 
