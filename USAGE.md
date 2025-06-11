@@ -63,8 +63,8 @@ Windows Registry Editor Version 5.00
 
 #### 2. Install Registry Files
 
-1. Double-click on `add_new_reg_template_option.reg` to add the registry entry for .reg file templates
-2. Double-click on `add_new_ps1_template_option.reg` to add the registry entry for PowerShell script templates
+1. Double-click on `registry/add_new_reg_template_option.reg` to add the registry entry for .reg file templates
+2. Double-click on `registry/add_new_ps1_template_option.reg` to add the registry entry for PowerShell script templates
 3. Accept any security prompts that appear
 
 #### 3. Using the Templates
@@ -82,11 +82,11 @@ Clicking on either option will create a new file based on your template.
 
 #### Add to Start Menu
 
-The `add_to_start_menu.reg` file adds a context menu entry that lets you quickly add any file or folder to the Windows Start Menu.
+The `registry/add_to_start_menu.reg` file adds a context menu entry that lets you quickly add any file or folder to the Windows Start Menu.
 
 ##### Add to Start Menu - Installation
 
-1. Double-click on `add_to_start_menu.reg`
+1. Double-click on `registry/add_to_start_menu.reg`
 2. Accept any security prompts that appear
 
 ##### Add to Start Menu - Usage
@@ -98,7 +98,7 @@ The `add_to_start_menu.reg` file adds a context menu entry that lets you quickly
 
 #### Convert Images with ImageMagick
 
-The `convert_to_with_ImageMagick.reg` file adds context menu options to convert image files between different formats.
+The `registry/convert_to_with_ImageMagick.reg` file adds context menu options to convert image files between different formats.
 
 ##### ImageMagick Conversion - Prerequisites
 
@@ -107,7 +107,7 @@ The `convert_to_with_ImageMagick.reg` file adds context menu options to convert 
 
 ##### ImageMagick Conversion - Installation
 
-1. Double-click on `convert_to_with_ImageMagick.reg`
+1. Double-click on `registry/convert_to_with_ImageMagick.reg`
 2. Accept any security prompts that appear
 
 ##### ImageMagick Conversion - Usage
@@ -123,11 +123,11 @@ The `convert_to_with_ImageMagick.reg` file adds context menu options to convert 
 
 #### Open Physical Folder for Libraries
 
-The `open_physical_folder.reg` file adds a context menu option to open the physical folder location when you're browsing a Windows Library folder.
+The `registry/open_physical_folder.reg` file adds a context menu option to open the physical folder location when you're browsing a Windows Library folder.
 
 ##### Physical Folder - Installation
 
-1. Double-click on `open_physical_folder.reg`
+1. Double-click on `registry/open_physical_folder.reg`
 2. Accept any security prompts that appear
 
 ##### Physical Folder - Usage
@@ -141,7 +141,7 @@ The `open_physical_folder.reg` file adds a context menu option to open the physi
 
 #### Default Preview for Registry Files
 
-The `default_preview_reg_files.reg` file changes the default action for .reg files to preview them with PowerToys Registry Preview rather than immediately importing them.
+The `registry/default_preview_reg_files.reg` file changes the default action for .reg files to preview them with PowerToys Registry Preview rather than immediately importing them.
 
 ##### Registry Preview - Prerequisites
 
@@ -150,7 +150,7 @@ The `default_preview_reg_files.reg` file changes the default action for .reg fil
 
 ##### Registry Preview - Installation
 
-1. Double-click on `default_preview_reg_files.reg`
+1. Double-click on `registry/default_preview_reg_files.reg`
 2. Accept any security prompts that appear
 
 ##### Registry Preview - Usage
@@ -167,11 +167,11 @@ These scripts provide productivity enhancements for various tasks. All scripts r
 
 #### Auto Setup VS Code Workspace
 
-The `AutoSetupVSCodeWorkspace.ahk` script automatically copies template files from a designated folder to newly opened VS Code workspaces.
+The `AutoHotkey/AutoSetupVSCodeWorkspace.ahk` script automatically copies template files from a designated folder to newly opened VS Code workspaces.
 
 ##### Auto Setup VS Code Workspace - Installation
 
-1. Download the `AutoSetupVSCodeWorkspace.ahk` script
+1. Download the `AutoHotkey/AutoSetupVSCodeWorkspace.ahk` script
 2. Double-click to run it, or add it to your startup items for persistent use
 
 ##### Auto Setup VS Code Workspace - Configuration
@@ -191,11 +191,11 @@ The `AutoSetupVSCodeWorkspace.ahk` script automatically copies template files fr
 
 #### Paste with Escaped Characters
 
-The `PasteEscape.ahk` script provides a way to paste clipboard text with special characters automatically escaped, which is useful for programming and scripting tasks.
+The `AutoHotkey/PasteEscape.ahk` script provides a way to paste clipboard text with special characters automatically escaped, which is useful for programming and scripting tasks.
 
 ##### PasteEscape - Installation
 
-1. Download the `PasteEscape.ahk` script
+1. Download the `AutoHotkey/PasteEscape.ahk` script
 2. Double-click to run it, or add it to your startup items for persistent use
 
 ##### PasteEscape - Usage
@@ -211,7 +211,7 @@ The `PasteEscape.ahk` script provides a way to paste clipboard text with special
 
 #### Generate Documentation with GitHub Copilot
 
-The `AutoGenerateDocsUsingCopilotInVSCode.ahk` script automates documentation generation using GitHub Copilot by creating a prompt based on your project files.
+The `AutoHotkey/AutoGenerateDocsUsingCopilotInVSCode.ahk` script automates documentation generation using GitHub Copilot by creating a prompt based on your project files.
 
 ##### Copilot Documentation - Prerequisites
 
@@ -219,7 +219,7 @@ The `AutoGenerateDocsUsingCopilotInVSCode.ahk` script automates documentation ge
 
 ##### Copilot Documentation - Installation
 
-1. Download the `AutoGenerateDocsUsingCopilotInVSCode.ahk` script
+1. Download the `AutoHotkey/AutoGenerateDocsUsingCopilotInVSCode.ahk` script
 2. Double-click to run it
 
 ##### Copilot Documentation - Usage
@@ -233,7 +233,7 @@ The `AutoGenerateDocsUsingCopilotInVSCode.ahk` script automates documentation ge
 
 #### Send Selected Text to GitHub Copilot
 
-The `OpenTextInVSCodeCopilot.ahk` script provides quick shortcuts to send selected text from any application directly to GitHub Copilot in VS Code.
+The `AutoHotkey/OpenTextInVSCodeCopilot.ahk` script provides quick shortcuts to send selected text from any application directly to GitHub Copilot in VS Code.
 
 ##### Copilot Text Selection - Prerequisites
 
@@ -241,7 +241,7 @@ The `OpenTextInVSCodeCopilot.ahk` script provides quick shortcuts to send select
 
 ##### Copilot Text Selection - Installation
 
-1. Download the `OpenTextInVSCodeCopilot.ahk` script
+1. Download the `AutoHotkey/OpenTextInVSCodeCopilot.ahk` script
 2. Double-click to run it
 
 ##### Copilot Text Selection - Usage
@@ -260,7 +260,7 @@ The `OpenTextInVSCodeCopilot.ahk` script provides quick shortcuts to send select
 
 #### Auto Turn On 3D Printer Smart Plug
 
-The `AutoTurnOn3DPrinterSmartPlug.ahk` script automatically monitors for 3D printing slicer applications and turns on a smart plug connected to your 3D printer when a slicer is opened.
+The `AutoHotkey/AutoTurnOn3DPrinterSmartPlug.ahk` script automatically monitors for 3D printing slicer applications and turns on a smart plug connected to your 3D printer when a slicer is opened.
 
 ##### 3D Printer Smart Plug - Prerequisites
 
@@ -270,7 +270,7 @@ The `AutoTurnOn3DPrinterSmartPlug.ahk` script automatically monitors for 3D prin
 
 ##### 3D Printer Smart Plug - Installation
 
-1. Download the `AutoTurnOn3DPrinterSmartPlug.ahk` script
+1. Download the `AutoHotkey/AutoTurnOn3DPrinterSmartPlug.ahk` script
 2. Create a `.env` file in the same directory as the script with your configuration:
 
    ```bash
@@ -302,11 +302,11 @@ The `AutoTurnOn3DPrinterSmartPlug.ahk` script automatically monitors for 3D prin
 
 #### Disable Start Menu Windows Key
 
-The `DisableStartMenuWinKey.ahk` script disables the Windows key from opening the Start Menu while preserving common Windows key combinations.
+The `AutoHotkey/DisableStartMenuWinKey.ahk` script disables the Windows key from opening the Start Menu while preserving common Windows key combinations.
 
 ##### Disable Start Menu Windows Key - Installation
 
-1. Download the `DisableStartMenuWinKey.ahk` script
+1. Download the `AutoHotkey/DisableStartMenuWinKey.ahk` script
 2. Double-click to run it, or add it to your startup items for persistent use
 
 ##### Disable Start Menu Windows Key - Usage
@@ -366,7 +366,7 @@ To add more services, edit the `services` array in the script.
 
 The repository includes template files and configuration examples:
 
-- `.env.example` - Environment configuration template for scripts requiring API access
+- `AutoHotkey/.env.example` - Environment configuration template for scripts requiring API access
 - `Templates/.github/copilot-instructions.md` - GitHub Copilot instruction template for repositories
 - Various registry files for system customization
 
@@ -376,7 +376,7 @@ The repository includes template files and configuration examples:
 
 If you want to store your templates in a different location:
 
-1. Edit the registry files (e.g., `add_new_reg_template_option.reg`)
+1. Edit the registry files (e.g., `registry/add_new_reg_template_option.reg`)
 2. Change the path in the `"FileName"` value to your preferred location
 3. Re-import the registry file
 
