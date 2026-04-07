@@ -1,5 +1,6 @@
 # Table of Contents
 
+- [My Awesome Projects](#my-awesome-projects)
 - [Awesome Apps](#awesome-apps)
 - [Awesome Websites](#awesome-websites)
 - [Awesome CLI Tools](#awesome-cli-tools)
@@ -9,6 +10,11 @@
 - [Awesome GISTs](#awesome-gists)
 - [Awesome Windows Registry Entries](#awesome-windows-registry-entries)
 - [Awesome AutoHotkey Scripts](#awesome-autohotkey-scripts)
+
+## My Awesome Projects
+
+- [Glyph HA Integration](https://github.com/Pytonballoon810/Glyph-HA-Integration): An Android app that integrates with Home Assistant to display information on the Nothing Phone (3 & 4) Glyph interface
+- [AudioMetaEditor](https://github.com/Pytonballoon810/AudioMetaEditor): A desktop audio workstation for people who do not need 600 tracks, 200 plugins, or a mixing console the size of a spaceship. It is built for focused audio metadata work with fast playback, waveform selection, album-level organization, and practical file operations.
 
 ## Awesome Apps
 
